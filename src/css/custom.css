@@ -1,0 +1,32 @@
+:root {
+  /* Go Gopher blue theme */
+  --ifm-color-primary: #00ADD8;
+  --ifm-color-primary-dark: #009ac1;
+  --ifm-color-primary-darker: #0091b6;
+  --ifm-color-primary-darkest: #007795;
+  --ifm-color-primary-light: #1ab8df;
+  --ifm-color-primary-lighter: #33c2e4;
+  --ifm-color-primary-lightest: #66d4ec;
+
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #1f2933;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 173, 216, 0.12);
+}
+
+/* Dark mode — Go blue but brighter for contrast */
+[data-theme='dark'] {
+  --ifm-color-primary: #33c2e4;
+  --ifm-color-primary-dark: #1ab8df;
+  --ifm-color-primary-darker: #00ADD8;
+  --ifm-color-primary-darkest: #0091b6;
+  --ifm-color-primary-light: #4fcdea;
+  --ifm-color-primary-lighter: #66d4ec;
+  --ifm-color-primary-lightest: #99e3f3;
+
+  --ifm-background-color: #0f1720;
+  --ifm-font-color-base: #e6edf3;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 173, 216, 0.25);
+}
