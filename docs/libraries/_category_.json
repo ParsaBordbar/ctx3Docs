@@ -1,0 +1,8 @@
+{
+  "label": "Libraries",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "ctx3 can be used as a Go library in addition to the CLI."
+  }
+}
