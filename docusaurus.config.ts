@@ -12,10 +12,10 @@ const config: Config = {
   },
 
   url: 'https://parsabordbar.github.io',
-  baseUrl: '/ctx3/',
+  baseUrl: '/ctx3Docs/',
 
-  organizationName: 'parsabordbar',
-  projectName: 'ctx3',
+  organizationName: 'ParsaBordbar',
+  projectName: 'ctx3Docs',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -31,7 +31,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/parsabordbar/ctx3/edit/main/docs/',
+          editUrl: 'https://github.com/ParsaBordbar/ctx3Docs/edit/main/docs/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -76,40 +76,22 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Introduction',
-              to: '/docs/intro',
-            },
-            {
-              label: 'Quick Start',
-              to: '/docs/quickStart',
-            },
+            { label: 'Introduction', to: '/docs/intro' },
+            { label: 'Quick Start', to: '/docs/quickStart' },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'GitHub Issues',
-              href: 'https://github.com/parsabordbar/ctx3/issues',
-            },
-            {
-              label: 'GitHub Discussions',
-              href: 'https://github.com/parsabordbar/ctx3/discussions',
-            },
+            { label: 'GitHub Issues', href: 'https://github.com/parsabordbar/ctx3/issues' },
+            { label: 'GitHub Discussions', href: 'https://github.com/parsabordbar/ctx3/discussions' },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/parsabordbar/ctx3',
-            },
-            {
-              label: 'Releases',
-              href: 'https://github.com/parsabordbar/ctx3/releases',
-            },
+            { label: 'GitHub', href: 'https://github.com/parsabordbar/ctx3' },
+            { label: 'Releases', href: 'https://github.com/parsabordbar/ctx3/releases' },
           ],
         },
       ],
