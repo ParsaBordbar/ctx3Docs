@@ -5,6 +5,38 @@
 
 .heroBanner {
   padding: 4rem 0;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  /* background-image: url("../../static/img/ctx-banner.png"); */
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/**
+ * index.module.css
+ * Homepage styles for ctx3 docs site.
+ * Extends Docusaurus defaults — hero styles stay in the theme.
+ */
+
+/* ─── Hero ─────────────────────────────────────────────────────────────── */
+
+.heroBanner {
+  padding: 4rem 0 3rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -20,4 +52,237 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ─── Shared section layout ─────────────────────────────────────────────── */
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-600);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ─── Features ──────────────────────────────────────────────────────────── */
+
+.featuresSection {
+  padding: 5rem 0;
+  background: var(--ifm-background-surface-color);
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.featureCard {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.featureCard:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.featureTitle {
+  font-size: 1.1rem !important;
+  font-weight: 600;
+  margin-bottom: 0.5rem !important;
+}
+
+.featureDesc {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.featureCommand {
+  display: inline-block;
+  font-size: 0.8rem;
+  background: var(--ifm-code-background);
+  color: var(--ifm-code-color);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+/* ─── Quick start ────────────────────────────────────────────────────────── */
+
+.quickStartSection {
+  padding: 5rem 0;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.stepCard {
+  position: relative;
+  padding: 1.5rem;
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+.stepNumber {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary-lightest);
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.stepTitle {
+  font-size: 1.1rem !important;
+  font-weight: 600;
+  margin-bottom: 0.4rem !important;
+}
+
+.stepDesc {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1rem;
+}
+
+.stepCode {
+  background: var(--ifm-code-background);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.82rem;
+  margin: 0;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* ─── Use cases ──────────────────────────────────────────────────────────── */
+
+.useCasesSection {
+  padding: 5rem 0;
+  background: var(--ifm-background-surface-color);
+}
+
+.useCasesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.useCaseCard {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.useCaseCard:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.useCaseEmoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.useCaseTitle {
+  font-size: 1.05rem !important;
+  font-weight: 600;
+  margin-bottom: 0.5rem !important;
+}
+
+.useCaseBody {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ─── CTA ────────────────────────────────────────────────────────────────── */
+
+.ctaSection {
+  padding: 5rem 0;
+}
+
+.ctaBox {
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-darkest) 0%,
+    var(--ifm-color-primary-dark) 100%
+  );
+  border-radius: 16px;
+  padding: 3.5rem 2rem;
+  color: white;
+}
+
+.ctaTitle {
+  color: white !important;
+  font-size: 2rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.ctaSubtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ─── Dark mode tweaks ───────────────────────────────────────────────────── */
+
+[data-theme='dark'] .featureCard,
+[data-theme='dark'] .useCaseCard {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .featureCard:hover,
+[data-theme='dark'] .useCaseCard:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .ctaBox {
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-darkest) 0%,
+    var(--ifm-color-primary) 100%
+  );
 }
